@@ -88,9 +88,5 @@ public final class RehostedJarHandler {
         stopModRepostsLink.getStyle().setColor(TextFormatting.BLUE);
         stopModRepostsLink.getStyle().setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, new TextComponentTranslation("chat.armourers_workshop:invalidJarStopModRepostsTooltip", (Object)null)));
         stopModRepostsLink.getStyle().setClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, STOP_MOD_REPOSTS_URL));
-        
-        TextComponentTranslation updateMessage = new TextComponentTranslation("chat.armourers_workshop:invalidJar", downloadLink, stopModRepostsLink);
-        updateMessage.getStyle().setColor(TextFormatting.RED);
-        player.sendMessage(updateMessage);
     }
 }
